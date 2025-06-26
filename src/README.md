@@ -1,4 +1,4 @@
-# FlowSynx SHA  Hash Plugin – FlowSynx Platform Integration
+## FlowSynx SHA  Hash Plugin – FlowSynx Platform Integration
 
 The SHA Hash Plugin is a secure, plug-and-play component for the FlowSynx engine. It enables the computation of various SHA family hashes (including SHA-1, SHA-2, SHA-3, and SHAKE) from text or binary data, and is designed to seamlessly integrate into FlowSynx’s no-code/low-code automation workflows.
 
