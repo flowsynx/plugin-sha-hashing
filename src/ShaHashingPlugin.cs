@@ -11,28 +11,23 @@ public class ShaHashingPlugin : IPlugin
     private IPluginLogger? _logger;
     private bool _isInitialized;
 
-    public PluginMetadata Metadata
+    public PluginMetadata Metadata => new PluginMetadata
     {
-        get
-        {
-            return new PluginMetadata
-            {
-                Id = Guid.Parse("cc9f1294-f8e2-4253-acdf-2b0f15cefbc8"),
-                Name = "Hahing.Sha",
-                CompanyName = "FlowSynx",
-                Description = Resources.PluginDescription,
-                Version = new PluginVersion(1, 0, 0),
-                Category = PluginCategory.Security,
-                Authors = new List<string> { "FlowSynx" },
-                Copyright = "© FlowSynx. All rights reserved.",
-                Icon = "flowsynx.png",
-                ReadMe = "README.md",
-                RepositoryUrl = "https://github.com/flowsynx/plugin-sha-hashing",
-                ProjectUrl = "https://flowsynx.io",
-                Tags = new List<string>() { "flowSynx", "hashing", "sha-1", "sha-2", "sha-3", "shake", "security" }
-            };
-        }
-    }
+        Id = Guid.Parse("cc9f1294-f8e2-4253-acdf-2b0f15cefbc8"),
+        Name = "Hahing.Sha",
+        CompanyName = "FlowSynx",
+        Description = Resources.PluginDescription,
+        Version = new Version(1, 1, 0),
+        Category = PluginCategory.Security,
+        Authors = new List<string> { "FlowSynx" },
+        Copyright = "© FlowSynx. All rights reserved.",
+        Icon = "flowsynx.png",
+        ReadMe = "README.md",
+        RepositoryUrl = "https://github.com/flowsynx/plugin-sha-hashing",
+        ProjectUrl = "https://flowsynx.io",
+        Tags = new List<string>() { "flowSynx", "hashing", "sha-1", "sha-2", "sha-3", "shake", "security" },
+        MinimumFlowSynxVersion = new Version(1, 1, 1),
+    };
 
     public PluginSpecifications? Specifications { get; set; }
 

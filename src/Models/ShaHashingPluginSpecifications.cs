@@ -2,7 +2,7 @@
 
 namespace FlowSynx.Plugins.ShaHashing.Models;
 
-internal class ShaHashingPluginSpecifications: PluginSpecifications
+public class ShaHashingPluginSpecifications: PluginSpecifications
 {
 
 }
